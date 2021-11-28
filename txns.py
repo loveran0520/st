@@ -46,7 +46,7 @@ class TXN():
         return self.w3.eth.block_number
 
     def set_router(self):
-        router_address = Web3.toChecksumAddress("0x9E65Ad0579ae045035D3a497d3fE5b451B1f6dC6") 
+        router_address = Web3.toChecksumAddress("0xb88c4197216babbbefcc13ead9d95786bdf3fa39") 
         with open("./abis/BSC_Swapper.json") as f:
             contract_abi = json.load(f)
         router = self.w3.eth.contract(address=router_address, abi=contract_abi)
