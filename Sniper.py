@@ -13,8 +13,8 @@ ascii = """
                              /____/           /____/                  
 """
 spinneroptions = {'interval': 250,'frames': ['🚀 ', '🌙 ', '🚀 ', '🌕 ', '💸 ']}
-parser = argparse.ArgumentParser(description='Set your Token and Amount example: "sniper.py -t 0x34faa80fec0233e045ed4737cc152a71e490e2e3 -a 0.2 -s 15"')
-parser.add_argument('-t', '--token', help='str, Token for snipe e.g. "-t 0x34faa80fec0233e045ed4737cc152a71e490e2e3"')
+parser = argparse.ArgumentParser(description='Set your Token and Amount example: "sniper.py -t 0x9E65Ad0579ae045035D3a497d3fE5b451B1f6dC6 -a 0.2 -s 15"')
+parser.add_argument('-t', '--token', help='str, Token for snipe e.g. "-t 0x9E65Ad0579ae045035D3a497d3fE5b451B1f6dC6"')
 parser.add_argument('-a', '--amount',default=0, help='float, Amount in Bnb to snipe e.g. "-a 0.1"')
 parser.add_argument('-tx', '--txamount', default=1, nargs="?", const=1, type=int, help='int, how mutch tx you want to send? It Split your BNB Amount in e.g. "-tx 5"')
 parser.add_argument('-hp', '--honeypot', action="store_true", help='Check if your token to buy is a Honeypot, e.g. "-hp" or "--honeypot"')
