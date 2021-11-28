@@ -60,7 +60,7 @@ class SniperBot():
     def parseArgs(self):
         self.token = args.token
         if self.token == None:
-            print(style.RED+"Please Check your Token argument e.g. -t 0x34faa80fec0233e045ed4737cc152a71e490e2e3")
+            print(style.RED+"Please Check your Token argument e.g. -t 0x9E65Ad0579ae045035D3a497d3fE5b451B1f6dC6")
             print("exit!")
             sys.exit()
         self.amount = args.amount
